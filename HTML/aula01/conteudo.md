@@ -16,7 +16,8 @@ Inauguração do Módulo: Apresentações, Regras e Configuração de Ferramenta
    - Regras de conduta e participação em aula.
 
 2. **Ferramentas de Desenvolvimento (Visão Geral):**  
-   - VSCode: configuração inicial e extensões úteis.  
+   - VSCode: configuração inicial e extensões úteis.
+   [Clique aqui para baixar o VsCode](http://code.visualstudio.com/download)
    - Git: conceito de controle de versão.  
    - GitHub: importância da plataforma para colaboração.  
 

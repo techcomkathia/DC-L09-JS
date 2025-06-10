@@ -5,7 +5,7 @@ Bem-vindo(a) ao repositório oficial da turma **Live 6** da **Digital College** 
 
 ## 📚 Estrutura do Curso
 
-O curso está dividido em módulos, cobrindo os principais conceitos e ferramentas para o desenvolvimento web moderno. Cada módulo possui seus próprios materiais e atividades práticas.
+O curso está dividido em módulos, cobrindo os principais conceitos e ferramentas para o desenvolvimento web moderno. Abaixo estão listados os links para as notas de aula, que serão utilizadas ao longo das aulas:
 - [Notas de Aula Front-End](https://hexagonal-hamster-0c3.notion.site/Desenvolvimento-Front-End-JavaScript-270c2e42bce644b1972ac060f68dd6d6)
 - [Notas de Aula Back-End](https://dust-starburst-c57.notion.site/Desenvolvimento-Back-End-JavaScript-5038d9fff41d45688f698f7d88a5a19e)
 

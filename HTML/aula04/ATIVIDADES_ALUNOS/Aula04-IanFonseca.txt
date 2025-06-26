@@ -1,0 +1,11 @@
+Link para os arquivos do repositório:
+
+Desafio Formulário de Candidatura
+https://github.com/ianfonseca/Atividades-Digital-College/blob/main/AULAS%20HTML/AULA%204/FormularioCandidatura.html
+
+Atividades da aula
+-Formulário de cadastro
+https://github.com/ianfonseca/Atividades-Digital-College/blob/main/AULAS%20HTML/AULA%204/formulariocadastro.html
+
+-Formulários 2
+https://github.com/ianfonseca/Atividades-Digital-College/blob/main/AULAS%20HTML/AULA%204/atividade2.html

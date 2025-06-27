@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+<!-- 
+    <style>
+        th{
+            background-color: black;
+            color: white;
+            border:1px solid rgb(255, 0, 0);
+            padding: 5px;
+        }
+
+        tr{
+            border:1px solid rgb(227, 8, 213);
+            background-color: blue;
+            padding: 15px;
+        }
+
+        td{
+            border:1px solid rgb(0, 0, 0);
+            padding: 15px;
+            background-color: bisque;
+            margin: 15px;
+        }
+
+        table{
+            padding: 5px;
+            border: 2px solid rgb(0, 26, 255);
+
+        }
+    </style> -->
+
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1>Tabelas</h1>
+
+    <table>
+        <!-- 3 linhas e cada linha tenha 4 colunas -->
+
+        <!-- primeira linha -->
+        <tr>
+            <!-- primeira linha terá os cabeçalhos / títulos / legendas -->
+             <th>Título Coluna1</th>
+             <th>Título Coluna2</th>
+             <th>Título Coluna3</th>
+             <th>Título Coluna4</th>
+
+        </tr>
+        <!-- segunda linha -->
+        <tr>
+            <td>linha2 Coluna1</td>
+            <td>linha2 Coluna3</td>
+            <td>linha2 Coluna5</td>
+        </tr>
+        <!-- terceira linha -->
+        <tr>
+            <td>linha3 Coluna1</td>
+            <td>linha3 Coluna2</td>
+            <td>linha3 Coluna3</td>
+            <td>linha3 Coluna4</td>
+        </tr>
+
+    <br>
+    </table>
+
+        <table>
+        <!-- 3 linhas e cada linha tenha 4 colunas -->
+
+        <!-- primeira linha -->
+        <tr>
+            <!-- primeira linha terá os cabeçalhos / títulos / legendas -->
+             <th>codigo</th>
+             <th>nome</th>
+             <th>preço</th>
+             <th>quantidade</th>
+
+        </tr>
+        <!-- segunda linha -->
+        <tr>
+            <td>001</td>
+            <td>Macarrao</td>
+            <td>R$ 12,50</td>
+            <td>10</td>
+        </tr>
+        <!-- terceira linha -->
+        <tr>
+            <td>002</td>
+            <td>Banana</td>
+            <td>R$ 5,90</td>
+            <td>10</td>
+        </tr>
+
+
+    </table>
+
+    <h2>Colunas com células "mescladas"</h2>
+
+    <h3>Mesclagem no sentido da coluna</h3>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Endereço</th>
+        </tr>
+        <tr>
+            <td colspan="2">João</td>
+            <td>Recife</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>Recife</td>
+        </tr>
+    </table>
+
+    <h3>Mesclagem no sentido da linha</h3>
+    <table>
+        <tr>
+            <th rowspan="2">Aluno</th>
+            <th colspan="2">turmas</th>            
+        </tr>
+        <tr>
+
+            <th>Manhã</th>
+            <th>Tarde</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>A</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Joao</td>
+            <td>B</td>
+            <td>A</td>
+        </tr>
+    </table>
+
+    <img src="Captura de tela 2025-06-26 213641.jpg" alt="">
+
+
+    <table>
+        <tr>
+            <th colspan="2" rowspan="2"></th>
+            <th colspan="3">Demografia </th>
+        </tr>
+
+        <tr>
+            <th>Meninos </th>
+            <th>Meninas</th>
+            <th>Professor</th>
+        </tr>
+
+        <tr>
+            <th rowspan="4">Turmas</th>
+            <th>A</th>
+            <td>20</td>
+            <td>5</td>
+            <td rowspan="2">João Pedro</td>
+        </tr>
+        <tr>
+            <th>B</th>
+            <td>21</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>C</th>
+            <td>25</td>
+            <td>2</td>
+            <td rowspan="2">Maria</td>
+        </tr>
+        <tr>
+            <th>D</th>
+            <td>20</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th colspan="2">TOTAL</th>
+            <td>86</td>
+            <td>10</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+
+ 
+    
+</body>
+</html>

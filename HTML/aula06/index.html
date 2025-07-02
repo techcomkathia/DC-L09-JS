@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula06</title>
+    <!-- internal css -->
+    <!-- <style>
+        p{
+            color:blue
+        }
+    </style> -->
+    <!-- css externo. use link:css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="meuEstilo.css">
 </head>
 <body>
 
@@ -25,10 +34,13 @@
     </header>
 
     <main>
-        <h1>Labubu, Lafufu e Tribufu: a febre dos chaveiros que conquistou a internet </h1>
-        <p>Se você anda pelas redes sociais, especialmente no TikTok e Instagram, já deve ter esbarrado com vídeos fofíssimos ou até hilários protagonizados por Labubu, Lafufu e Tribufu. Eles são os novos queridinhos da trend dos chaveiros, e não é difícil entender o motivo.</p>
+        <h1 id="meu_id" >Labubu, Lafufu e Tribufu: a febre dos chaveiros que conquistou a internet </h1>
+        <!-- estilo inline  -->
+        <p style="color:red" >Se você anda pelas redes sociais, especialmente no TikTok e Instagram, já deve ter esbarrado com vídeos fofíssimos ou até hilários protagonizados por Labubu, Lafufu e Tribufu. Eles são os novos queridinhos da trend dos chaveiros, e não é difícil entender o motivo.</p>
+
+        <a href="https://www.popmart.com.br/" target="_blank">Link para o site da marca</a>
         
-        <section>
+        <section >
             <h2>Quem são eles?</h2>
             <p>Labubu é o monstrinho mais conhecido do trio, criado pela marca POP MART. Com dentes pontudos, orelhas longas e expressões que variam do assustado ao travesso, ele virou sensação por seu jeito esquisito e fofo ao mesmo tempo. Lafufu e Tribufu são variações carinhosas (e inventadas pela criatividade popular) para se referir cópias inspiradas (falsificações) no Labubu original, o que alimentou ainda mais a brincadeira.</p>
             <!-- cada grupo de tags com a tag h3, uma imagem e um parágrafo deve ser envelopado por uma tag div -->   
@@ -46,7 +58,7 @@
                 <p>Lafufu réplica mais parecida com a original.</p>
             </div>
             
-            <div>
+            <div class="minha_classe">
                 <h3>Tribufu</h3>
                 <!-- **imagem** -->
                 <img src="imgs/tribufu.jpg" alt="Tribufu, não é bom, não é bonito, mas é barato. ">
@@ -60,7 +72,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="minha_classe minha_classe2">
         <p>Todos os direitos reservados</p>
     </footer>
 

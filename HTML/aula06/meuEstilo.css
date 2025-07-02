@@ -1,0 +1,36 @@
+/* propriedades para textos */
+/* cor -> color  */
+/* tamanho da fonte -> font-size */
+/* tamanho da fonte-> font-size */
+/* fonte -> font-family */
+/* alinhamento -> text-align */
+
+/* cores: cores definidas, cores por rgb, rgba, hexadecimal */
+h1{
+    color:blue;
+    font-size: xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    /* peso da fonte de forma nominal */
+    font-weight: normal;
+    text-align: justify;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    /* peso da fonte  */
+    font-weight: 900;
+}
+
+h2{
+    color:rgb(8, 174, 234);
+    /* RGBA -> cor com transparencia */
+    font-size: 25px;
+}
+
+h3{
+    color:#cc0f0ff3;
+    font-size: 80%;
+    /* medidas responsivas -> %  vw vh  */
+}
+
+/* títulos com font-family diferente do restante do conteúdo */

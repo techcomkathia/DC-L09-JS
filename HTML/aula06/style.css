@@ -1,0 +1,46 @@
+/* seletor de tag */
+
+p{
+    /* propriedade : valor; */
+    color: darkblue;
+    font-size: 30px;
+}
+
+
+/* classes no html  class="minha_classe" */
+/* seletor de classe .nomeClase */
+.minha_classe{
+    background-color: rgb(255, 0, 212);
+}
+/* camelCase - nomeSobreNome */
+/* snake_case - nome_sobre_nome */
+.minha_classe2{
+    border: 10px solid red;
+}
+
+/* seletor de id #  */
+#meu_id{
+    text-decoration: underline;
+    color:chocolate
+}
+
+
+/* seletor de lista */
+/* propriedades comuns ao grupo de tags */
+h1, h2, h3, h4, h5, h6{
+    color: rgb(0, 255, 34);
+}
+
+/* estilização por seletor de tag  */
+/* caracteristicas especificas para cada tag*/
+
+h6{
+    font-size: 150px;
+}
+
+/* seletor por afinidade */
+/* estilizar uma ancora dentro de um li dentro de uma ul dentro de um nav */
+nav ul li a{
+    color: rgb(255, 0, 0);
+    background-color: darkgoldenrod;
+}

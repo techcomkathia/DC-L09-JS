@@ -1,0 +1,9 @@
+Chat , boa noite. Gostaria de montar um html base para exercitar alguns conceitos que estou estudando no css. 
+O que eu quero explorar no css: 
+modelo de caixa (border, padding, margin)
+cores : fonte, plano de fundo
+imagens: largura, altura
+display: inline, block, none, display-flex. 
+O que eu sei de divs semânticas: header, footer, main, section, article, div.
+Quero que você gere apenas o html. Quero explorar os conceitos do css sozinho. 
+O que eu sei de css : seletores por tag, classe, id, associação e lista. Conheço as principais propriedades para textos 

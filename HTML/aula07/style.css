@@ -1,0 +1,35 @@
+/* 
+     * aplique um background na tag header e footer de cinza claro
+     * aplique um background na tag main de cinza escuro
+     * o header, main e footer devem ter borda de 5px, solida e preta
+     * header vai ter um espacamento interno de top e de base 20px e de laterais 40px
+     *main vai ter um espaçamento externo de topo e de base de 15px 
+     *footer vai ter um espaçamento externo de topo e de base de 15px e de laterais 40px e interno de 10px.  */
+
+header, footer {
+    background-color: rgb(225, 225, 225);
+}
+
+main {
+    background-color: rgb(129, 129, 129);
+    /* margin: 15px 0px; */
+    margin-top: 15px; 
+    margin-bottom: 15%;
+    /* margin: 15px */
+    /* todas a laterais */
+}
+
+header, main, footer {
+    border: 5px solid black;
+}
+
+header {
+    padding: 20px 40px;
+}
+
+
+footer {
+    margin: 15px 40px;
+    padding: 10px;
+
+}

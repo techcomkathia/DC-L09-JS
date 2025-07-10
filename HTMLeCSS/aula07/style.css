@@ -33,3 +33,27 @@ footer {
     padding: 10px;
 
 }
+
+.oculto{
+    display: none;
+}
+
+#introducao, #conteudo-principal, #imagens, #modelos-display{
+
+    display: inline-block;
+    width: 400px;
+    height: 900px;
+    margin: 0px auto;
+    /* alinhamento pelo topo */
+    vertical-align: top;
+    background-color: rgba(65, 105, 225, 0.165);
+    
+}
+
+.centralizado{
+    /* serve para entralizar um elemento */
+    display: block;
+    margin: 0 auto;
+    border: 10px solid red;
+    width: 900px;
+}

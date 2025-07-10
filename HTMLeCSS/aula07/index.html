@@ -18,7 +18,9 @@
 
       <!-- 2) 
        o segundo link da nav deve ser oculto, com uma classe que aplica propriedade de display
+
        as duas primeiras divs, devem ser posicionadas na mesma linha 
+       
        as duas section ( a primeira com imagens e a segunda com classes caixa, devem ser posicionadas na mesma linha)
        as imagens devem ser posicionadas uma abaixo da outra, e ter um tamanho igual
 
@@ -33,42 +35,43 @@
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li class="oculto"><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="introducao">
-            <h2>Introdução</h2>
-            <p class="texto-destaque">Esse é um parágrafo introdutório com uma classe aplicada.</p>
-        </section>
+        <div class="centralizado">
+            <section id="introducao">
+                <h2>Introdução</h2>
+                <p class="texto-destaque">Esse é um parágrafo introdutório com uma classe aplicada.</p>
+            </section>
+            <section id="conteudo-principal">
+                <article>
+                    <h3>Artigo 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article>
+                    <h3>Artigo 2</h3>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </section>
+        </div>
 
-        <section id="conteudo-principal">
-            <article>
-                <h3>Artigo 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </article>
-
-            <article>
-                <h3>Artigo 2</h3>
-                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-        </section>
-
-        <section id="imagens">
-            <h2>Imagens para testar</h2>
-            <img src="https://placehold.co/400x400" alt="Imagem de exemplo 1" class="img-exemplo">
-            <img src="https://placehold.co/200x200" alt="Imagem de exemplo 2" id="img-personalizada">
-        </section>
-
-        <section id="modelos-display">
-            <h2>Modelos de Display</h2>
-            <div class="caixa">Caixa 1</div>
-            <div class="caixa">Caixa 2</div>
-            <div class="caixa">Caixa 3</div>
-        </section>
+        <div class="centralizado">
+            <section id="imagens">
+                <h2>Imagens para testar</h2>
+                <img src="https://placehold.co/400x400" alt="Imagem de exemplo 1" class="img-exemplo">
+                <img src="https://placehold.co/200x200" alt="Imagem de exemplo 2" id="img-personalizada">
+            </section>
+            <section id="modelos-display">
+                <h2>Modelos de Display</h2>
+                <div class=" caixa outraClasse">Caixa 1</div>
+                <div class="caixa">Caixa 2</div>
+                <div class="caixa">Caixa 3</div>
+            </section>
+        </div>
     </main>
 
     <footer>

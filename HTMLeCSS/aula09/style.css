@@ -1,4 +1,5 @@
 /* imports de fontes */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* reset de estilos */
 *{
@@ -15,12 +16,15 @@
     --cor-titulo-botao: #FFAE00;
     --cor-card: rgba(37, 37, 37, 0.8);
     --cor-texto: #ffffff;
+    --fonte-titulo: 'DM Serif Text', serif;
+    --fonte-texto: 'Roboto', sans-serif;
 }
 
 /* estilização do plano de fundo da pagina */
 body{
     background-image:url('./materialCardapio/imagens/bg.png');
     color: var(--cor-texto);
+    font-family: var(--fonte-texto);
 }
 
 header{
@@ -34,7 +38,6 @@ header{
 
 nav ul{
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 li{

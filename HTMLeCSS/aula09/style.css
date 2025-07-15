@@ -108,6 +108,11 @@ h2{
 
 .boxTexto{
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    justify-content:space-evenly;
+    
 }
 
 .boxTexto button{

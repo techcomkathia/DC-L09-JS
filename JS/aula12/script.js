@@ -19,11 +19,11 @@ console.log(w)
 // objetivo de debugar a aplicação, durante o desenvolvimento e fazer comunicações com o desenvolvedor
 
 alert(x)
-//função nativa exibe as informações no navegador para o usuário e não tem retorno para o programa. Pausa o programa e aguarda o usuário confirmar o ok
+/*função nativa exibe as informações no navegador para o usuário e não tem retorno para o programa. Pausa o programa e aguarda o usuário confirmar o ok*/
 
 y= confirm( "valor de x " + x)
-console.log(y)
 // função que exibe as informações no navegador como uma pergunta, e dá a opção para o usuário confirmar ou cancelar a pergunta. Retorna true ou false. Pausa o programa e aguarda o usuário confirmar ou cancelar a pergunta
+console.log(y) // mostra o novo valor de y (reatribuição)
 
 y = prompt("digite seu nome")
 console.log(y)

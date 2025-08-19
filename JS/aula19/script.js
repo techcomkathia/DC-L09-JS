@@ -13,10 +13,10 @@ function dobrarValor(){
 
 }
 
+let a = 10
+let y = 20
+
 function somar(num1, num2){
-    // let x = Number(prompt('Digite um número'))
-    // let y = Number(prompt('Digite outro número'))
-    // let soma = x + y
     let soma2 = num1 + num2
     console.log(soma2)
     return(soma2)
@@ -92,6 +92,8 @@ executarOperacao(10, 10, somar)
 executarOperacao(10, 10, subtrair)
 executarOperacao(10, 10, multiplicar)
 executarOperacao(10, 10, dividir)
+
+somar(10,20)
 
 
 

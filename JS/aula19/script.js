@@ -87,7 +87,8 @@ function executarOperacao(num1, num2, funcao){
     funcao(num1, num2)
 }
 
-executarOperacao(10, 10, dobrarValor)
+executarOperacao(10, 10, 'k')
+executarOperacao(10, 10, somar)
 executarOperacao(10, 10, somar)
 executarOperacao(10, 10, subtrair)
 executarOperacao(10, 10, multiplicar)

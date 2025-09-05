@@ -6,9 +6,12 @@ fetch('https://viacep.com.br/ws/01001000/json')//promisse
     console.log(erro.message)
 })
 
-console.log(2+2) //sincrona
+console.log(2+2) //síncrona
 
 //utilize o cep da sua residência e mostre o nome da rua no console
+
+//correção 22:12 :D
+
 
 //fecth é o método para consumo de API ( ele recebe como parâmetro uma url -> observar a documentação da api para usar corretamente)
 //then é um método para promisses (que são sempre retornadas pelo fecth)

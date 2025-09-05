@@ -4,22 +4,23 @@ function buscarCep() {
     console.log(url)
 
     fetch(url)
-        .then((resposta)=>{
-            resposta.json() //converter o corpo da resposta(promisse)
+        .then((resposta)=> { return resposta.json() //converter o corpo da resposta(promisse)
             //retornar no formato de objeto
-        })
+    })
         .then((dados)=>{
-                console.log(dados)
-                alert("Sua cidade é " + dados.city + ", no estado do " + dados.state)
-                return dados
+            console.log(dados)
+            alert("Sua cidade é " + dados.city + ", no estado do " + dados.state)
+            return dados
         })
         .then((retorno)=>{
-            alert(retorno.rua)
+            alert(retorno.street)
         })
         .catch((erro)=>{
             console.log("ocorreu um erro ao buscar os dados!", erro)
         })
 
 }
+
+//intervalo :) Volatmos de 20:30 :D
 
 buscarCep()

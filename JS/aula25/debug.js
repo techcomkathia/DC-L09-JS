@@ -31,6 +31,13 @@ function resetar(){
     
 }
 
+//objetoDOM.addEventListener('evento', funcaoCallback)
+
+//funcao de callback sem parâmetros
+// objeto.addEventListener('click', nomeFuncao)
+
+//funcao de callback com parâmetros
+// objeto.addEventListener('click', () => { nomeFuncao(parametros) })
 
 //adicionando o evento aos botoes
 btnVermelho.addEventListener('click',red)

@@ -7,38 +7,51 @@ const bebida = document.querySelector('#bebida')
 //representar o parágrafo
 const totalConta = document.querySelector('#totalConta')
 
+const inputTotal = document.querySelector('#totalContaInput')
+
 //criar uma variável para armazenar o somatorio
 let valorConta = 0
+let valorBebida = 0
+let valorSobremesa = 0
+let valorPratoPrincipal = 0
+let valorEntrada = 0
 //criar uma função para atualizar o valor do somatório
 
-function atualizarTotal( valor){
-    valorConta +=Number(valor) //convertendo o valor para number
-    //a propriedade value dos inputs são strings, entao precisamos converter o valor para number para poder somar
+function atualizarTotal( ){
+    valorConta = valorBebida + valorSobremesa + valorPratoPrincipal + valorEntrada 
 }
 //atualizar o parágrafo a cada mudança dos campos de inputs
 
 entrada.addEventListener('change', ()=>{
-    atualizarTotal(entrada.value) //atualiza o valor do somatorio a cada mudança no campo de entrada
+    valorEntrada = Number(entrada.value)
+    atualizarTotal() //atualiza o valor do somatorio a cada mudança no campo de entrada
     totalConta.innerHTML = `R$ ${valorConta}`
     console.log('executei')
+    inputTotal.value = `R$ ${valorConta}`
 })
 
 
 
 pratoPrincipal.addEventListener('change', ()=>{
-    atualizarTotal(pratoPrincipal.value)
+    valorPratoPrincipal = Number(pratoPrincipal.value)
+    atualizarTotal()
     totalConta.innerHTML = `R$ ${valorConta}`
     console.log('executei')
+    inputTotal.value = `R$ ${valorConta}`
 })
 
 sobremesa.addEventListener('change', ()=>{
-    atualizarTotal(sobremesa.value)
+    valorSobremesa = Number(sobremesa.value)
+    atualizarTotal()
     totalConta.innerHTML = `R$ ${valorConta}`
     console.log('executei')
+    inputTotal.value = `R$ ${valorConta}`
 })
 
 bebida.addEventListener('change', ()=>{
-    atualizarTotal(bebida.value)
+    valorBebida = Number(bebida.value)
+    atualizarTotal()
     totalConta.innerHTML = `R$ ${valorConta}`
     console.log('executei')
+    inputTotal.value = `R$ ${valorConta}`
 })

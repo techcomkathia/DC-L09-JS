@@ -1,0 +1,6 @@
+Crie 2 componentes:
+
+componente BoxTexto: Terá um título h2 e um parágrafo
+componente ImagemDetalhe: terá uma imagem e um parágrafo de descrição da imagem. Essa imagem usará um link de uma imagem da web (endereço original da imagem)
+
+importe e use os dois componentes no App.jsx

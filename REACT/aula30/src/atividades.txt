@@ -1,0 +1,15 @@
+//1) Para exercitar o conceito de atualização de estado e renderização de uma nova versão do componente, 
+crie um componente que tenha um título e 3 botões.
+// cada botão terá o nome de uma cor, ao clicar no botão com o nome da cor o texto escrito dentro da tag do título deve mudar.
+// você deverá usar a ideia de variável com estado contralado para responder essa questão. 
+
+
+2) Crie um componente que trabalhe com 2 botões.
+//cada botão terá oi comportamento de alterar a imagem da lampada que será renderizada
+// crie um botãio de ligar e outro de desligar
+// e abaixo a imagem da lampada, que inicialmente será a da lampada acesa. 
+acesa : https://i.sstatic.net/ybxlO.jpg
+apagada: https://i.sstatic.net/b983w.jpg
+quebrada: https://i.sstatic.net/MRjsF.jpg
+
+3) Use o componente cardProduto em uma renderização por lista,com o array de objetos 'listaProdutos'. Use o método map e faça a renderização das informações de todos os produtos no componente cardProduto. 

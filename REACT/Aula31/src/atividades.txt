@@ -1,0 +1,9 @@
+1) Use o componente Card e o Button do react-bootstrap para criar um CardProduto. 
+Esse componente terá as seguintes props : nomeProduto, descricaoProduto, precoProduto, imagemProduto
+
+Após criar o componente CardProduto importe no app e crie 2 exemplos de uso. 
+
+
+2) Crie um componente que seja o containerProdutos que recebrá como props um arrays de objetos e irá renderizar em lista todos eles nos cardProdutos
+
+

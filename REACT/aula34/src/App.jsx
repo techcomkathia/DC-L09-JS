@@ -10,6 +10,7 @@ import ListaNormais from './componentes/atividade1/ListaNormais'
 import ContagemFuncionarios from './componentes/atividade2/ContagemFuncionarios'
 import { ContextoFuncionarios, ContextoFuncionariosProvider } from './componentes/atividade2/ContextoFuncionarios'
 import ListaFuncionarios from './componentes/atividade2/ListaFuncionarios'
+import FormularioFuncionario from './componentes/atividade2/FormularioFuncionario'
 function App() {
  
   return (
@@ -20,7 +21,7 @@ function App() {
       <ContextoFuncionariosProvider>
         <ContagemFuncionarios />
         <ListaFuncionarios />
-        {/* formularioCadastroFuncionario */}
+        <FormularioFuncionario />
       </ContextoFuncionariosProvider>
 
 

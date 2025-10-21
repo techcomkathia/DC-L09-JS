@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 
-export const GlobalStyle = createGlobalStyle`
+
+export const EstiloGlobal = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
@@ -9,9 +10,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-color: ${({tema}) => tema.cores.p};
-        color: ${({tema}) => tema.cores.b};
-        font-family: ${({tema}) => tema.fontes.secundaria};
+        background-color: ${({temas}) => temas.cores.p};
+        color: ${({temas}) => temas.cores.b};
+        font-family: ${({temas}) => temas.fontes.secundaria};
     }
 `
 

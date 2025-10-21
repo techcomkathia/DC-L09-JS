@@ -20,7 +20,7 @@ export const Botao = styled.button`
 export default function BotaoStyled(){
     return(
         <div>
-            h1
+        
             <Botao>Enviar</Botao>
         </div>
 

@@ -9,4 +9,4 @@ create table autores(
 create table categorias(
 	idCategoria int auto_increment primary key,
     nome varchar(50)
-);
+); 

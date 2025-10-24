@@ -96,3 +96,57 @@ INSERT INTO venda (fkNf, fkItem, fkProd, quantidade, desconto) VALUES
 (7 ,3 ,3 ,10 ,4 ),
 (7 ,4 ,5 ,10 ,1 );
 
+update item 
+set valorUnit = valorUnit - 2
+where idItem = 5;
+
+-- adicionar primeiro as colunas na tabela
+alter table produtor
+add endereco varchar(100),
+add cidade varchar(50),
+add uf char(2);
+
+UPDATE produtor
+SET endereco = 'Av. das Nações Unidas, 12901',
+cidade = 'São Paulo',
+UF = 'SP'
+WHERE codProd = 1;
+
+
+UPDATE produtor 
+SET endereco = 'Rua Gomes de Carvalho, 1609',
+cidade = 'São Paulo',
+UF = 'SP' 
+WHERE codProd = 2;
+
+UPDATE produtor 
+SET endereco = 'Av. Paulista, 2000',
+cidade = 'São Paulo',
+UF = 'SP' 
+WHERE codProd = 3;
+
+UPDATE produtor 
+SET endereco = 'Av. Presidente Vargas, 620',
+cidade = 'Rio de Janeiro',
+UF = 'RJ' 
+WHERE codProd = 4;
+
+UPDATE produtor 
+SET endereco = 'Rua das Palmeiras, 50',
+cidade = 'Campinas',
+UF = 'SP'
+WHERE codProd = 5;
+
+UPDATE venda
+SET desconto = 10
+WHERE fkNf = 3 AND fkItem=3;
+
+UPDATE venda
+SET desconto = 2
+WHERE fkItem = 1;
+
+-- operadores de comparação
+UPDATE venda
+SET desconto= 50
+WHERE fkItem = 3 AND quantidade > 5;
+

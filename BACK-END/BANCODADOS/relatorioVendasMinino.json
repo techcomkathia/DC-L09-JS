@@ -1,0 +1,27 @@
+[
+	{
+		"nomeProdutor" : "Osvaldo Silva",
+		"totalSemDesconto" : 44.00,
+		"valorComDesconto" : 44.00000000
+	},
+	{
+		"nomeProdutor" : "Carlos Lima",
+		"totalSemDesconto" : 24.00,
+		"valorComDesconto" : 21.60000000
+	},
+	{
+		"nomeProdutor" : "Pedro Rocha",
+		"totalSemDesconto" : 7.50,
+		"valorComDesconto" : 7.50000000
+	},
+	{
+		"nomeProdutor" : "Maria Souza",
+		"totalSemDesconto" : 19.50,
+		"valorComDesconto" : 19.50000000
+	},
+	{
+		"nomeProdutor" : "Ana Costa",
+		"totalSemDesconto" : 21.00,
+		"valorComDesconto" : 21.00000000
+	}
+]

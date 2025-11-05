@@ -1,0 +1,1 @@
+Node.js é um ambiente de runtime de código aberto e multiplataforma que permite executar código JavaScript fora do navegador, no lado do servidor. Ele é construído sobre o motor V8 do Google Chrome, conhecido por sua alta performance. O Node.js é amplamente utilizado para construir aplicações web, APIs, microsserviços, ferramentas de linha de comando e muito mais. 

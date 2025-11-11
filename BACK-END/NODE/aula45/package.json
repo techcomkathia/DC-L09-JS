@@ -1,0 +1,15 @@
+{
+  "name": "aula45",
+  "version": "1.0.0",
+  "description": "Introdução ao Express ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Káthia Rocha Sá",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "aula44",
+  "version": "1.0.0",
+  "description": "Aula 2 de Node.js com a apresentação do módulo fs e módulo http",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Kathia Rocha Sá",
+  "license": "ISC"
+}

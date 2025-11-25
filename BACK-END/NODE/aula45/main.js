@@ -19,8 +19,18 @@ app.get('/', (req, res)=>{
 })
 
 //cria um endpoint para a rota /soma
-app.get('/soma', (req, res)=>{
+app.get('/soma', 
+    //controller 
+    (req, res)=>{
+    if(!soma){
+        res.json({
+            erro: 'Nenhuma soma realizada'
+        })
+        res.end()
+        return
+    }
     res.json({
+        //serviço (acesso a camada de dados)
         totalSoma: soma
     })
     res.end() //finalizar a requisição

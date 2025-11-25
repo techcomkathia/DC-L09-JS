@@ -38,4 +38,7 @@ const PessoaFisicaModel = sequelize.define('pessoaFisica', {
     }
 })
 
+PessoaFisicaModel.belongsTo(ClienteModel, {foreignKey: 'cliente_id'})
+ClienteModel.hasMany(PessoaFisicaModel, {foreignKey: 'cliente_id'})
+
 module.exports = PessoaFisicaModel

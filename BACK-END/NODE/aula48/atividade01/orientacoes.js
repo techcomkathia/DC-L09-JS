@@ -38,7 +38,7 @@ let bancoDeDados = {
 // Exercicio 2:
 /* Crie o serviço para obter todos os clientes e cadastrar um novo cliente (o id deve ser gerado automaticamente)
 
-Crie um controlador para retornar todos os clientes e o status code 200 e um controlador para cadastrar um novo cliente. Caso as informacoes sejam invalidas, retorne o status code 400 caso contrario, com todas as informacoes corretas retorne o status code 200 com uma mensagem de sucesso e mostre a lista atualizada de clientes no 
+//Exercício 3: Crie um controlador para retornar todos os clientes e o status code 200 e um controlador para cadastrar um novo cliente. Caso as informacoes sejam invalidas, retorne o status code 400 caso contrario, com todas as informacoes corretas retorne o status code 200 com uma mensagem de sucesso e mostre a lista atualizada de clientes no 
 
 */
 

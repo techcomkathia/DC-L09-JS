@@ -19,6 +19,10 @@ function cadastrarCliente(cliente) {
         id,
         ...cliente
     }
+
+    bancoDeDados.clientes.push(novoCliente)
+    console.log(bancoDeDados.clientes)
+    return novoCliente
     
 }
 

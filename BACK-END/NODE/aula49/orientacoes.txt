@@ -1,0 +1,39 @@
+- Explorar os conceitos a arquitetura MVC (Modelo, Serviços e Controladores) aplicando o Sequelize para acesso e manipulação de um banco de dados MySQL
+
+- Dependências necessárias : 
+1. Express ( criar as rotas e trabalhar com as requisições do protocolo HTTP)
+2. Sequelize (Acessar e manipular o banco)
+3. MySQL2 ( Permite o acesso ao SGB do banco)
+
+- Necessário antes do projeto:
+- O banco de dados já existente (com as tabelas ou não)
+
+
+-A estrutura do projeto:
+  *Modelo
+    -ConfigBanco.js
+    -UsuariosModel.js
+    -ProdutosModel.js
+  *Servicos
+    -UsuariosServices.js
+    -ProdutosServices.js
+  *Controladores
+    -UsuariosController.js
+    -ProdutosController.js
+  -App.js
+
+Para o Banco de dados API_LOJA
+
+Teremos a tabela usuarios com as seguintes informações
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(80) NOT NULL UNIQUE,
+    senha VARCHAR(50) NOT NULL
+
+Teremos a tabela para produtos com as seguintes informações
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco FLOAT NOT NULL,
+    quantidade INT NOT NULL
+
+1) Após fazer a criação do banco ( sem as tabelas), a inicialização do projeto com a instalação das depedências, crie os modelos para usuários e produtos. A instância do sequelize com as credênciais de acesso ao banco serão configuradas no arquivo ConfigBanco.

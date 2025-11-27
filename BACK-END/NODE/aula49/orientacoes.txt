@@ -24,6 +24,7 @@
 
 Para o Banco de dados API_LOJA
 
+
 Teremos a tabela usuarios com as seguintes informações
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
@@ -32,8 +33,10 @@ Teremos a tabela usuarios com as seguintes informações
 
 Teremos a tabela para produtos com as seguintes informações
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
+    nome VARCHAR(100) NOT NULL UNIQUE,
     preco FLOAT NOT NULL,
     quantidade INT NOT NULL
 
 1) Após fazer a criação do banco ( sem as tabelas), a inicialização do projeto com a instalação das depedências, crie os modelos para usuários e produtos. A instância do sequelize com as credênciais de acesso ao banco serão configuradas no arquivo ConfigBanco.
+
+2) Crie os serviços para buscar todos os usuários e para buscar um usuário por id e o mesmo deverá ser feito para produtos A camada de serviço realiza apenas as manipulações no modelo , logo o modelo deverá ser importado no arquivo de definição dos serviços.

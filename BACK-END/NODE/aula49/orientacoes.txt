@@ -68,3 +68,5 @@ em caso de erro (quando o retorno do serviço for null ou undefined) retorne a r
   statusCode:400,
   erro: nenhuma informação disponível na tabela
 }
+
+4) Após criar os recursos para usuários ( serviços e controladores), crie as rotas (get) para disponibilizar os recusos na api.

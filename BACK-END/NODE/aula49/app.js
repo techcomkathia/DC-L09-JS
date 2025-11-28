@@ -5,17 +5,49 @@ const sequelize = require('./modelo/ConfigBanco')
 const UsuariosModel = require('./modelo/UsuariosModel')
 const ProdutosModel = require('./modelo/ProdutosModel')
 
+//importar o express e criar uma instância
+const express = require('express')
+const app = express()
 
-//fazer a autenticação do banco e a sincronização das tabelas
-sequelize.authenticate()
-.then(() => {
-    console.log('Conexão estabelecida com sucesso')
-    //sincronizar as tabelas
-    sequelize.sync({alter: true}).then(() => {
-        console.log('Tabelas criadas/alteradas com sucesso')
-        //{alter: true} -> alterar as tabelas se necessário modificando as colunas, mas não exclui a estrutura da tabela ( conservando os dados existentes )
+//Permite que o Express leia JSON no corpo das requisições
+app.use(express.json())//middleware de body parser ( converte o corpo da requisição para json)
+
+//ATIVIDADE 04 (CRIAR AS ROTAS)
+
+app.get('/', (req, res) => {
+    res.json({
+        api: 'API do Magazine Cleitinho v1.0.0',
+        autor: 'Káthia Rocha',
+        versao: '1.0.0'
     })
 })
-.catch(err => {
-    console.log('Erro ao conectar ao banco de dados: ' + err)
+
+//rotas para usuarios (todos os usuarios e um usuario especifico)
+
+
+
+//rotas para produtos (todos os produtos e um produto especifico)
+
+
+
+// Criação do servidor
+app.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000. Acesse http://localhost:3000')
+    //todas as vezes que o servidor for iniciado, ele vai sincronizar as tabelas e fazer a autenticação com o banco de dados
+    //sincronizar as tabelas e fazer a autenticação com o banco
+    sequelize.authenticate()
+    .then(() => {
+        console.log('Conexão estabelecida com sucesso')
+        //sincronizar as tabelas
+        sequelize.sync({alter: true}).then(() => {
+            console.log('Tabelas criadas/alteradas com sucesso')
+            //{alter: true} -> alterar as tabelas se necessário modificando as colunas, mas não exclui a estrutura da tabela ( conservando os dados existentes )
+        })
+    })
+    .catch(err => {
+        console.log('Erro ao conectar ao banco de dados: ' + err)
+    })
+
 })
+
+

@@ -40,3 +40,31 @@ Teremos a tabela para produtos com as seguintes informações
 1) Após fazer a criação do banco ( sem as tabelas), a inicialização do projeto com a instalação das depedências, crie os modelos para usuários e produtos. A instância do sequelize com as credênciais de acesso ao banco serão configuradas no arquivo ConfigBanco.
 
 2) Crie os serviços para buscar todos os usuários e para buscar um usuário por id e o mesmo deverá ser feito para produtos A camada de serviço realiza apenas as manipulações no modelo , logo o modelo deverá ser importado no arquivo de definição dos serviços.
+
+
+3) Crie os controladores para Produtos:
+- getProdutos -> retorna uma resposta com status:200 e o objeto no seguinte formato:
+{
+  statusCode:200,
+  dados:{
+    //array de objetos retornados pelo serviço
+  }
+}
+em caso de erro (quando o array de objetos estiver vazio) retorne a resposta com o status:400 o seguinte formato
+{
+  statusCode:400,
+  erro: nenhuma informação disponível na tabela
+}
+
+-getProduto() -> usa o id do parâmetro de rota para executar o serviço. retorna uma resposta com status:200 e o objeto no seguinte formato:
+{
+  statusCode:200,
+  produto:{
+    //objeto retornados pelo serviço
+  }
+}
+em caso de erro (quando o retorno do serviço for null ou undefined) retorne a resposta com o status:400 o seguinte formato
+{
+  statusCode:400,
+  erro: nenhuma informação disponível na tabela
+}

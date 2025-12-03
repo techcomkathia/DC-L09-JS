@@ -1,3 +1,38 @@
+const bcrypt = require('bcrypt')
+const UsuariosServices = require('../servicos/UsuariosServices')
+
+async function login(req, res) {
+    const objetoUsuario = req.body
+    
+    const usuarioEncontrado = await UsuariosServices.buscarPorEmail(objetoUsuario.email)
+    
+    //caso o usuário não seja encontrado, retorna 400 e uma mensagem de erro
+    if(!usuarioEncontrado) {
+        res.status(400).json({
+            statusCode: 400,
+            erro: 'Email nao cadastrado'
+        })
+        return
+    }
+    //compare(textoUsuario, valorArmazenadoBanco com hash)
+    const senhaCorreta = await bcrypt.compare(objetoUsuario.senha, usuarioEncontrado.senha)
+
+    if(senhaCorreta) {
+        res.status(200).json({
+            statusCode: 200,
+            dados: 'sucesso na autenticação'
+        })
+    } else {
+        res.status(400).json({
+            statusCode: 400,
+            erro: 'Email ou senha incorretos'
+        })
+    }
+
+}
+
+module.exports = login
+
 // recebe o objeto da requisição com o seguinte formato :
 /* 
 {

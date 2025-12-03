@@ -8,6 +8,7 @@ const ProdutosModel = require('./modelo/ProdutosModel')
 //importar os controladores
 const ProdutosController = require('./controladores/ProdutosController')
 const UsuariosController = require('./controladores/UsuariosController')
+const loginController = require('./controladores/loginController')
 
 //importação do middle de validação
 const validacaoProdutoMiddleware = require('./middlewares/validacaoProdutoMiddleware')
@@ -53,6 +54,9 @@ app.get('/usuarios/:id', UsuariosController.getUsuario)
 //(rota, middleware, controlador)
 //rota para criar um usuario
 app.post('/usuarios',validacaoUsuarioMiddleware, UsuariosController.postUsuario)
+
+
+app.post('/login', loginController)
 
 // Criação do servidor
 app.listen(3000, () => {

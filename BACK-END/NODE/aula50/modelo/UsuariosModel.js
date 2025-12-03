@@ -17,7 +17,11 @@ const UsuariosModel = sequelize.define('usuarios', {
         unique: true
     },
     senha: {
-        type: DataTypes.STRING(50),
+        type: DataTypes.STRING(200),
+        allowNull: false,
+        //valor padrão do hash 123Mudar
+        defaultValue: '$2a$12$i85tZYzljbZY02ec4GzIZOJW4dc8S/tQXM6TeusTX2AEgy8wPTGRe' //123mudar
+
     }
 })
 

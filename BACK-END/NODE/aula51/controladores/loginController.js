@@ -1,6 +1,8 @@
 const bcrypt = require('bcrypt')
 const UsuariosServices = require('../servicos/UsuariosServices')
 
+const JWT = require('jsonwebtoken')
+
 async function login(req, res) {
     const objetoUsuario = req.body
     
@@ -18,9 +20,28 @@ async function login(req, res) {
     const senhaCorreta = await bcrypt.compare(objetoUsuario.senha, usuarioEncontrado.senha)
 
     if(senhaCorreta) {
+
+        //gerar um token com o método sign
+        // recebe como parâmetro o objeto com os dados que serão usados no payload ,a palavra secreta e a quantidade de tempo de expiração do token
+        const token = JWT.sign(
+            //objeto que irá ser usado no payload
+            {
+                id: usuarioEncontrado.id,
+                email: usuarioEncontrado.email,
+                nome: usuarioEncontrado.nome,
+            }
+            //palavra secreta para gerar o token e decodificar na validação
+            ,
+            'minha-chave-secreta',
+            //prazo de validade do token
+            {expiresIn: '1h'}//esse prazo pode ser expresso em dias, horas, minutos ou segundos (1d, 1h, 1m, 1s)
+        ) 
+
+
         res.status(200).json({
             statusCode: 200,
-            dados: 'sucesso na autenticação'
+            dados: 'sucesso na autenticação',
+            token: token
         })
     } else {
         res.status(400).json({

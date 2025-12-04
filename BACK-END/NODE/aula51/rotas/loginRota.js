@@ -9,7 +9,7 @@ const rotasLogin = express.Router()
 //rotas para login
 //rotas sem middleware
 //(rota, controlador)
-rotasLogin.post('/', loginController.postLogin)
+rotasLogin.post('/', loginController)
 
 
 //exportar as rotas de login

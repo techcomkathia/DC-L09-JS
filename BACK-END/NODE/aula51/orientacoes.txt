@@ -70,3 +70,15 @@ em caso de erro (quando o retorno do serviço for null ou undefined) retorne a r
 }
 
 4) Após criar os recursos para usuários ( serviços e controladores), crie as rotas (get) para disponibilizar os recusos na api.
+
+
+5) Separar as camadas por responsabilidades ( crie uma pasta para rotas e um arquivo para cada rota)
+
+
+6) Criar um token JWT :
+a- Instalar a dependência :  npm install jsonwebtoken
+b- criar a etapa de montagem do token: 
+  1) caso você tenha o controlador de login: faça a geração do token e devolva na resposta de sucesso, após a validação do email e senha.
+  2) caso não tenha o controlador de login: para compreender a aplicação do JWT faça uma função simples que receba um objeto como parâmetro e compare com o objeto {nome: exemplo, senha: 123}. Caso o nome e a senha sejam iguais ao fornecido para a função, gere um token e monstre no console, no seguinte formato: {
+    status:200, token: o token jwt, prazo: 1h}
+  caso contrário mostre a palavra erro

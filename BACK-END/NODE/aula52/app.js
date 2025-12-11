@@ -1,6 +1,6 @@
 // importar o sequelize com as configurações do banco
 const sequelize = require('./modelo/ConfigBanco')
-require('dotenv').config({ path: ".env" });//arquiovo de variáveis de ambiente na raiz do projeto
+require('dotenv').config({ path: "/.env" });
 
 //importar as rotas de produtos e usuarios
 const rotasProdutos = require('./rotas/produtosRotas')

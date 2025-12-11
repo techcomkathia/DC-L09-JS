@@ -1,0 +1,88 @@
+- Explorar os conceitos a arquitetura MVC (Modelo, Serviços e Controladores) aplicando o Sequelize para acesso e manipulação de um banco de dados MySQL
+
+- Dependências necessárias : 
+1. Express ( criar as rotas e trabalhar com as requisições do protocolo HTTP)
+2. Sequelize (Acessar e manipular o banco)
+3. MySQL2 ( Permite o acesso ao SGB do banco)
+
+- Necessário antes do projeto:
+- O banco de dados já existente (com as tabelas ou não)
+
+
+-A estrutura do projeto:
+  *Modelo
+    -ConfigBanco.js
+    -UsuariosModel.js
+    -ProdutosModel.js
+  *Servicos
+    -UsuariosServices.js
+    -ProdutosServices.js
+  *Controladores
+    -UsuariosController.js
+    -ProdutosController.js
+  -App.js
+
+Para o Banco de dados API_LOJA
+
+
+Teremos a tabela usuarios com as seguintes informações
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(80) NOT NULL UNIQUE,
+    senha VARCHAR(50) NOT NULL
+
+Teremos a tabela para produtos com as seguintes informações
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL UNIQUE,
+    preco FLOAT NOT NULL,
+    quantidade INT NOT NULL
+
+1) Após fazer a criação do banco ( sem as tabelas), a inicialização do projeto com a instalação das depedências, crie os modelos para usuários e produtos. A instância do sequelize com as credênciais de acesso ao banco serão configuradas no arquivo ConfigBanco.
+
+2) Crie os serviços para buscar todos os usuários e para buscar um usuário por id e o mesmo deverá ser feito para produtos A camada de serviço realiza apenas as manipulações no modelo , logo o modelo deverá ser importado no arquivo de definição dos serviços.
+
+
+3) Crie os controladores para Produtos:
+- getProdutos -> retorna uma resposta com status:200 e o objeto no seguinte formato:
+{
+  statusCode:200,
+  dados:{
+    //array de objetos retornados pelo serviço
+  }
+}
+em caso de erro (quando o array de objetos estiver vazio) retorne a resposta com o status:400 o seguinte formato
+{
+  statusCode:400,
+  erro: nenhuma informação disponível na tabela
+}
+
+-getProduto() -> usa o id do parâmetro de rota para executar o serviço. retorna uma resposta com status:200 e o objeto no seguinte formato:
+{
+  statusCode:200,
+  produto:{
+    //objeto retornados pelo serviço
+  }
+}
+em caso de erro (quando o retorno do serviço for null ou undefined) retorne a resposta com o status:400 o seguinte formato
+{
+  statusCode:400,
+  erro: nenhuma informação disponível na tabela
+}
+
+4) Após criar os recursos para usuários ( serviços e controladores), crie as rotas (get) para disponibilizar os recusos na api.
+
+
+5) Separar as camadas por responsabilidades ( crie uma pasta para rotas e um arquivo para cada rota)
+
+
+6) Criar um token JWT :
+a- Instalar a dependência :  npm install jsonwebtoken
+b- criar a etapa de montagem do token: 
+  1) caso você tenha o controlador de login: faça a geração do token e devolva na resposta de sucesso, após a validação do email e senha.
+  2) caso não tenha o controlador de login: para compreender a aplicação do JWT faça uma função simples que receba um objeto como parâmetro e compare com o objeto {nome: exemplo, senha: 123}. Caso o nome e a senha sejam iguais ao fornecido para a função, gere um token e monstre no console, no seguinte formato: {
+    status:200, token: o token jwt, prazo: 1h}
+  caso contrário mostre a palavra erro
+
+
+
+7) Instale o dotenv (npm install dotenv), crie o arquivo env e envModel e use as váriaveis de ambiente na configuração de acesso a banco e no middleware de autenticação ( palavra secreta do JWT)

@@ -1,0 +1,20 @@
+Objetivo da aula : Utilizar chats de IAs para construção de uma API do zero
+
+1º Passo : Fornecer o contexto 
+* Objetivo para o uso da API:
+    Uso para o sistema de gerenciamento de um estacionamento. A API irá servir as camadas de visualização de um app mobile, um site e um programa desktop.
+* Características que precisam ser levadas em consideração ( problema ou dados específicos que devem ser representados)
+* Tecnologias que você tem conhecimento
+    * Node.js
+    * MySQL
+    * Sequelize
+    * Express
+    * Bcrypt
+    * JWT
+    * arquitetura MCV  ( modelo, serviços e controladores)
+* Solicitar que a arquitetura da aplicação obedeça regras de melhores práticas
+* Condições especiais: Não aplicação da POO, mas deixar o código passível de adaptações futuras
+
+*Faça perguntas antes de gerar qualquer código. O primordial é estruturar a arquitetura da API, com os detalhes do banco, escolha das funcionalidades (métodos e rotas) e as etapas de segurança (validação com token)
+
+

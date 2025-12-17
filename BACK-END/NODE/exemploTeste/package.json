@@ -1,0 +1,16 @@
+
+{
+  "name": "exemploteste",
+  "version": "1.0.0",
+  "description": "exemplo de como configurar o jest em uma aplicação e construir os primeiros testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests" 
+  },
+  "author": "Kathia",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
